@@ -1,4 +1,4 @@
-# ReVanced Magisk Module
+# ReVanced Extended Magisk Module
 [![Build Modules](https://github.com/E85Addict/revanced-extended-builds/actions/workflows/build.yml/badge.svg)](https://github.com/E85Addict/revanced-extended-builds/actions/workflows/build.yml)
 [![CI](https://github.com/E85Addict/revanced-extended-builds/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/E85Addict/revanced-extended-builds/actions/workflows/ci.yml)
 
@@ -20,7 +20,7 @@ The [**mindetach module**](https://github.com/j-hc/mindetach-magisk) in the rele
      * do not cause any permanent changes in /system or /data partitions
 
 ## To include/exclude patches
-[**See the list of patches**](https://github.com/inotia00/revanced-patches#-list-of-available-patches)
+[**See the list of patches**](https://github.com/inotia00/revanced-patches/tree/revanced-extended#-patches)
 
  * Star the repo :eyes:
  * Use the repo as template or fork it (if you choose the repo to be private, you won't receive updates from Magisk app)
