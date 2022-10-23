@@ -1,0 +1,50 @@
+name: CI
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */8 * * *"
+
+jobs:
+  check:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.1.0
+        with:
+          fetch-depth: 0
+
+      - name: Should build?
+        id: should_build
+        shell: bash
+        run: |
+          source build.conf
+          source utils.sh
+
+          is_patches_latest() {
+            declare -r last_patches_url=$(wget -nv -O- https://api.github.com/repos/E85Addict/revanced-patches/releases/latest | json_get 'browser_download_url' 'jar')
+            declare -r last_patches=${last_patches_url##*/}
+            cur_patches=$(sed -n 's/.*Patches: \(.*\)/\1/p' build.md | xargs)
+
+            echo "current patches version: $cur_patches"
+            echo "latest patches version: $last_patches"
+            [ "$cur_patches" != "$last_patches" ] # test success=>build, fail=>dont build
+          }
+
+          if ! git checkout update; then
+            echo "first time building!"
+            echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
+          elif is_patches_latest; then
+            echo "build!"
+            echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
+          else
+            echo "dont build!"
+            echo "SHOULD_BUILD=0" >> $GITHUB_OUTPUT
+          fi
+
+    outputs:
+      SHOULD_BUILD: ${{ steps.should_build.outputs.SHOULD_BUILD }}
+
+  build:
+    needs: check
+    uses: ./.github/workflows/build.yml
+    if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
