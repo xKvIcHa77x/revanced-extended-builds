@@ -280,7 +280,8 @@ build_rv() {
 			"$base_template"
 
 		local module_output="${app_name_l}-revanced-extended-magisk-v${version}-${arch}.zip"
-		zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}"
+		zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}" "$base_template"
+		rm -rf "$base_template"
 
 		echo "Built ${args[app_name]} (${arch}) (root): '${BUILD_DIR}/${module_output}'"
 	done
