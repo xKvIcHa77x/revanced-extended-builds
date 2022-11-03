@@ -36,13 +36,14 @@ jobs:
           echo "BUILD_LOG<<${DELIM}" >> "$GITHUB_OUTPUT"
           cat build.md >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
+          cp -f build.md build.tmp
 
           cd build
           yt_op=$(find . -maxdepth 1 -name "youtube-revanced-magisk-*.zip" -printf '%P')
           if [ -z "$yt_op" ]; then
-            echo "RELEASE_NAME=ReVanced Extended APKs" >> $GITHUB_OUTPUT
+            echo "RELEASE_NAME=ReVanced APKs" >> $GITHUB_OUTPUT
           else
-            echo "RELEASE_NAME=ReVanced Extended Modules/APKs" >> $GITHUB_OUTPUT
+            echo "RELEASE_NAME=ReVanced Modules/APKs" >> $GITHUB_OUTPUT
           fi
 
       - name: Upload modules to release
@@ -62,6 +63,7 @@ jobs:
       - name: Update changelog and Magisk update jsons
         id: update_config
         run: |
+          cp -f build.tmp build.md
           get_update_json() {
             echo "{
             \"version\": \"$1\",
