@@ -276,7 +276,8 @@ build_rv() {
 			"${args[app_name]} ReVanced Extended" \
 			"$version" \
 			"${args[app_name]} ReVanced Extended Magisk module" \
-			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/update/${upj}"
+			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/update/${upj}" \
+			"$base_template"
 
 		local module_output="${app_name_l}-revanced-extended-magisk-v${version}-${arch}.zip"
 		zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}"
