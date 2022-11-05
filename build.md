@@ -1,6 +1,6 @@
 CLI: revanced-cli-2.16.0-all.jar  
 Integrations: app-release-unsigned-v0.66.0.apk  
-Patches: revanced-patches-2.102.0.jar  
+Patches: revanced-patches-2.102.1.jar  
 
 [ReVanced Extended Patches Changelog](https://github.com/inotia00/revanced-patches/releases)  
 **App Versions:**  
