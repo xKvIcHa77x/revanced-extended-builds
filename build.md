@@ -1,11 +1,21 @@
 CLI: revanced-cli-2.16.0-all.jar  
 Integrations: app-release-unsigned-v0.71.0.apk  
-Patches: revanced-patches-2.111.1.jar  
+Patches: revanced-patches-2.111.2.jar  
 
 YouTube
 ==
-- Fix: `premium-heading` patch is broken in rvx-builder
-- Fix: compilation error occurred due to the typo in the French translation.
+- Fix: Sponsorblock, returnyoutubedislike not added to Settings UI if patch fails or exclued
+- Crowdin Translation Update
+`French`, `Russian`, `Slovak`, `Turkish`
+
+YouTube Music
+==
+- Crowdin Translation Update
+`Chinese Simplified`, `Slovak`
+
+ETC
+==
+- Added Support YouTube v17.45.34
 
 For the full changelog, please refer to the [previous build's changelog](https://github.com/inotia00/revanced-patches/releases/tag/v2.111.0)
 
@@ -14,8 +24,8 @@ For the full changelog, please refer to the [previous build's changelog](https:/
 ※ Please refer to the [documentations](https://github.com/inotia00/revanced-documentation/wiki/Method-3.-Using-official-ReVanced-Manager-(Android)) for a guide to building ReVanced Extended using the official ReVanced Manager.
   
 **App Versions:**  
-YouTube: 17.44.35  
-downloaded from: [APKMirror - YouTube](https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-44-35-release/youtube-17-44-35-android-apk-download/)  
+YouTube: 17.45.34  
+downloaded from: [APKMirror - YouTube](https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-45-34-release/youtube-17-45-34-2-android-apk-download/)  
 Music (arm64-v8a): 5.33.51  
 downloaded from: [APKMirror - Music (arm64-v8a)](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-33-51-release/youtube-music-5-33-51-2-android-apk-download/)  
 
