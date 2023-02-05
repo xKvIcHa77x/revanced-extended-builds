@@ -1,20 +1,31 @@
 CLI: revanced-cli-2.20.2-all.jar  
-Integrations: app-release-unsigned-v0.94.5.apk  
-Patches: revanced-patches-2.158.4.jar  
+Integrations: app-release-unsigned-v0.95.1.apk  
+Patches: revanced-patches-2.159.1.jar  
 
 YouTube
 ==
-- add `disable-shorts-player-pip` patch (Experimental Flags)
-- fix: `Hide preview comment` setting hides Chapters area in video info panel
-- refactor: `Hide shorts player subscriptions button` setting now hides the red subscribe button, too
+- add `Enable save brightness` toggle (swipe gesture) https://github.com/inotia00/ReVanced_Extended/issues/207
+- add `hide-tooltip-content` patch https://github.com/inotia00/ReVanced_Extended/issues/201
+- add `hide-fullscreen-panels` patch https://github.com/inotia00/ReVanced_Extended/issues/147
+- remove `hide-fullscreen-buttoncontainer` patch (duplicated with `hide-fullscreen-panels` patch)
+- fix: `Hide info cards` setting also removes info cards in video description panels https://github.com/inotia00/ReVanced_Extended/issues/212
+- fix: `Hide shorts player subscriptions button` setting removes the subscribe button in channel info
+- refactor: `Disable pip mode in shorts player` (Experimental Flags) setting now works on Android 12+ devices
+- refactor: `always-autorepeat` patch
 - crowdin translation update
-`Arabic`,  `French`, `Indonesian`, `Russian`, `Spanish`
+`Arabic`, `Chinese Simplified`, `Chinese Traditional`, `French`, `Greek`, `Indonesian`, `Japanese`, `Korean`, `Russian`, `Spanish`, `Vietnamese`
+
+YouTube Music
+==
+- fix: `hide-get-premium` patch is broken in latest YT Music
 
 ETC
 ==
-- add suport YouTube v18.03.42
+- add suport YouTube v18.04.41
+- refactor: word patch descriptions clearly
+- _clean install recommended_
 
-※ Compatible ReVanced Manager: v0.0.53
+※ Compatible ReVanced Manager: v0.0.54
 ※ If you want to contribute to the translation, refer below
 
 [Crowdin translation]
@@ -22,10 +33,10 @@ ETC
 - [other countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
-YouTube: 17.49.37  
-downloaded from: [APKMirror - YouTube](https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-49-37-release/youtube-17-49-37-2-android-apk-download/)  
 Music (arm64-v8a): 5.42.50  
 downloaded from: [APKMirror - Music (arm64-v8a)](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-42-50-release/youtube-music-5-42-50-2-android-apk-download/)  
+YouTube: 17.49.37  
+downloaded from: [APKMirror - YouTube](https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-49-37-release/youtube-17-49-37-2-android-apk-download/)  
 
 Install [Vanced Microg](https://github.com/inotia00/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
