@@ -1,4 +1,4 @@
-CLI: revanced-cli-2.20.2-all.jar  
+CLI: revanced-cli-2.20.3-all.jar  
 Integrations: revanced-integrations-0.95.6-v0.95.6.apk  
 Patches: revanced-patches-2.159.6.jar  
 
