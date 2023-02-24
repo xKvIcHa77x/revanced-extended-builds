@@ -1,5 +1,5 @@
 CLI: revanced-cli-2.20.3-all.jar  
-Integrations: revanced-integrations-0.98.6-v0.98.6.apk  
+Integrations: revanced-integrations-0.98.7-v0.98.7.apk  
 Patches: revanced-patches-2.163.4.jar  
 
 YouTube
