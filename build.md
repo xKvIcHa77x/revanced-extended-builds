@@ -34,8 +34,8 @@ ETC
 - [Other Countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
-Music (arm64-v8a): 5.46.52  
-downloaded from: [APKMirror - Music (arm64-v8a)](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-46-52-release/youtube-music-5-46-52-2-android-apk-download/)  
+Music (arm64-v8a): 5.46.53  
+downloaded from: [APKMirror - Music (arm64-v8a)](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-46-53-release/youtube-music-5-46-53-android-apk-download/)  
 
 Install [Vanced Microg](https://github.com/inotia00/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
