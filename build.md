@@ -1,21 +1,19 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.100.10-v0.100.10.apk  
-Patches: revanced-patches-2.166.10.jar  
+Integrations: revanced-integrations-0.100.12-v0.100.12.apk  
+Patches: revanced-patches-2.166.12.jar  
 
 YouTube
 ==
-- fix(enable-timestamps-speed): alignment of append string is abnormal in RTL layout https://github.com/inotia00/ReVanced_Extended/issues/506
-- fix(return-youtube-dislike): when like/dislike count is over 1000, alignment of append string is abnormal in RTL layout https://github.com/inotia00/ReVanced_Extended/issues/468
-- refactor(hide-button-container): button container settings now match with the official ReVanced's source code (also fix https://github.com/inotia00/ReVanced_Extended/issues/339)
+- add `hide-account-menu` patch https://t.me/revanced_extended_chat/180885
+- refactor(hide-video-ads): match with the official ReVanced's source code
+- refactor(hide-button-container): integrate `Hide share button` into `Hide action buttons` (also fix https://github.com/inotia00/ReVanced_Extended/issues/541)
 - crowdin translation update
-`Azerbaijani`, `Bengali`, `Chinese Traditional`, `French`, `German`, `Italian`, `Japanese`, `Korean`, `Russian`, `Spanish`, `Ukrainian`
+`Arabic`, `Chinese Simplified`, `Chinese Traditional`, `French`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
 
 
-YouTube Music
+ETC
 ==
-- fix: app crashes on YT Music v5.49.54+
-- crowdin translation update
-`Bengali`
+- add support YouTube v18.11.35
 
 
 ※ Compatible ReVanced Manager: v0.0.57
@@ -26,10 +24,10 @@ YouTube Music
 - [Other Countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
-YouTube: 18.10.37  
-downloaded from: [APKMirror - YouTube](https://www.apkmirror.com/apk/google-inc/youtube/youtube-18-10-37-release/youtube-18-10-37-2-android-apk-download/)  
 Music (arm64-v8a): 5.49.54  
 downloaded from: [APKMirror - Music (arm64-v8a)](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-49-54-release/youtube-music-5-49-54-2-android-apk-download/)  
+YouTube: 18.11.35  
+downloaded from: [APKMirror - YouTube](https://www.apkmirror.com/apk/google-inc/youtube/youtube-18-11-35-release/youtube-18-11-35-2-android-apk-download/)  
 
 Install [Vanced Microg](https://github.com/inotia00/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
